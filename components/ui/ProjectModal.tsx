@@ -91,7 +91,7 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
                )}
                {project.id === 4 && (
                  <>
-                   <li>• Implemented ripple-carry adders, 2's complement logic, and FSMs.</li>
+                   <li>• Implemented ripple-carry adders, 2&apos;s complement logic, and FSMs.</li>
                    <li>• Validated designs through simulation and FPGA deployment.</li>
                    <li>• Optimized designs for accurate signal propagation and synthesis.</li>
                  </>
