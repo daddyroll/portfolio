@@ -1,14 +1,14 @@
 export const navItems = [
   { name: "About", link: "#about" },
   { name: "Projects", link: "#projects" },
-  { name: "Testimonials", link: "#testimonials" },
+  { name: "Certificates", link: "#certificates" },
   { name: "Contact", link: "#contact" },
 ];
 
 export const gridItems = [
   {
     id: 1,
-    title: "I prioritize client collaboration, fostering open communication ",
+    title: "VLSI Design & Verification Engineer with expertise in digital design and functional verification",
     description: "",
     className: "lg:col-span-3 md:col-span-6 md:row-span-4 lg:min-h-[60vh]",
     imgClassName: "w-full h-full",
@@ -28,8 +28,8 @@ export const gridItems = [
   },
   {
     id: 3,
-    title: "My tech stack",
-    description: "I constantly try to improve",
+    title: "My Technical Skills",
+    description: "I constantly enhance my expertise in VLSI tools and methodologies",
     className: "lg:col-span-2 md:col-span-3 md:row-span-2",
     imgClassName: "",
     titleClassName: "justify-center",
@@ -38,7 +38,7 @@ export const gridItems = [
   },
   {
     id: 4,
-    title: "Tech enthusiast with a passion for development.",
+    title: "Passionate about semiconductor design and verification",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -49,8 +49,8 @@ export const gridItems = [
 
   {
     id: 5,
-    title: "Currently building a JS Animation library",
-    description: "The Inside Scoop",
+    title: "Currently working on 5-stage pipelined RISC-V processor and developing a PWM generator in SystemVerilog",
+    description: "Functional Verification & Design",
     className: "md:col-span-3 md:row-span-2",
     imgClassName: "absolute right-0 bottom-0 md:w-96 w-60",
     titleClassName: "justify-center md:justify-start lg:justify-center",
@@ -59,7 +59,7 @@ export const gridItems = [
   },
   {
     id: 6,
-    title: "Do you want to start a project together?",
+    title: "Interested in VLSI opportunities? Let's connect!",
     description: "",
     className: "lg:col-span-2 md:col-span-3 md:row-span-1",
     imgClassName: "",
@@ -72,132 +72,131 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "3D Solar System Planets to Explore",
-    des: "Explore the wonders of our solar system with this captivating 3D simulation of the planets using Three.js.",
-    img: "/p1.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/fm.svg"],
-    link: "/ui.earth.com",
+    title: "16-bit Arithmetic Logic Unit (ALU) Design",
+    des: "Designed and implemented a modular 16-bit ALU in SystemVerilog, capable of executing a range of arithmetic and logical operations using a custom instruction set. Verified functionality through simulation, ensuring reliable signal behavior for hardware environments.",
+    img: "/chrome_rs3hwyfSGn.png",
+    tools: ["SystemVerilog", "EPWave", "EDAPlayground", "HDL", "Testbench"],
+    link: "#",
   },
   {
     id: 2,
-    title: "Yoom - Video Conferencing App",
-    des: "Simplify your video conferencing experience with Yoom. Seamlessly connect with colleagues and friends.",
-    img: "/p2.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/stream.svg", "/c.svg"],
-    link: "/ui.yoom.com",
+    title: "Engraving Machine Control System",
+    des: "Developed a precise state feedback control system for an engraving machine, combining advanced control theory and simulation tools to achieve accurate and stable performance.",
+    img: "/chrome_Jq18abwU4Q.png",
+    tools: ["Matlab", "Control Systems", "State Feedback", "ISE", "Simulation"],
+    link: "#",
   },
   {
     id: 3,
-    title: "AI Image SaaS - Canva Application",
-    des: "A REAL Software-as-a-Service app with AI features and a payments and credits system using the latest tech stack.",
-    img: "/p3.svg",
-    iconLists: ["/re.svg", "/tail.svg", "/ts.svg", "/three.svg", "/c.svg"],
-    link: "/ui.aiimg.com",
+    title: "Analog Integrated Circuit Design Project",
+    des: "Designed and optimized analog circuits including low-pass filters and differential amplifiers in Cadence, achieving high stability, precision, and reduced noise for high-frequency applications.",
+    img: "/chrome_dDDtwV4lQk.png",
+    tools: ["Cadence", "Analog Design", "Filters", "Simulation", "Parametric Analysis"],
+    link: "#",
   },
   {
     id: 4,
-    title: "Animated Apple Iphone 3D Website",
-    des: "Recreated the Apple iPhone 15 Pro website, combining GSAP animations and Three.js 3D effects..",
-    img: "/p4.svg",
-    iconLists: ["/next.svg", "/tail.svg", "/ts.svg", "/three.svg", "/gsap.svg"],
-    link: "/ui.apple.com",
+    title: "Digital Logic and FPGA Design",
+    des: "Engineered and tested combinational and sequential circuits in Intel Quartus, using SystemVerilog to translate logic designs into functional FPGA hardware.",
+    img: "/Futuristic Altera FPGA in Neon Glow.png",
+    tools: ["SystemVerilog", "Intel Quartus", "FPGA", "Verilog", "Digital Logic"],
+    link: "#",
   },
 ];
 
-export const testimonials = [
+export const certificates = [
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 1,
+    title: "BCG GenAI",
+    issuer: "Forage (BCG)",
+    date: "2025",
+    description: "Comprehensive training in Generative AI applications, strategies, and implementation methodologies for business transformation.",
+    link: "#",
+    img: "/chrome_HF6IiI56rk.png",
+    nameImg: "/chrome_HF6IiI56rk.png",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 2,
+    title: "Operations Engineer",
+    issuer: "Forage (Siemens)",
+    date: "2025",
+    description: "Advanced operations engineering certification covering industrial automation, process optimization, and manufacturing systems.",
+    link: "#",
+    img: "/chrome_HF6IiI56rk.png",
+    nameImg: "/chrome_HF6IiI56rk.png",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 3,
+    title: "Electrical Simulation",
+    issuer: "Forage (GE Aerospace)",
+    date: "2025",
+    description: "Specialized training in electrical simulation tools and methodologies for aerospace applications and system design.",
+    link: "#",
+    img: "/chrome_HF6IiI56rk.png",
+    nameImg: "/chrome_HF6IiI56rk.png",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 4,
+    title: "Google Tests",
+    issuer: "Udemy",
+    date: "2025",
+    description: "Comprehensive testing methodologies and tools certification covering unit testing, integration testing, and automated testing frameworks.",
+    link: "#",
+    img: "/chrome_MHhwwJa5kO.png",
+    nameImg: "/chrome_MHhwwJa5kO.png",
   },
   {
-    quote:
-      "Collaborating with Adrian was an absolute pleasure. His professionalism, promptness, and dedication to delivering exceptional results were evident throughout our project. Adrian's enthusiasm for every facet of development truly stands out. If you're seeking to elevate your website and elevate your brand, Adrian is the ideal partner.",
-    name: "Michael Johnson",
-    title: "Director of AlphaStream Technologies",
+    id: 5,
+    title: "Gradle Build System",
+    issuer: "Gradle Inc.",
+    date: "2025",
+    description: "Advanced Gradle build system certification covering build automation, dependency management, and continuous integration workflows.",
+    link: "#",
+    img: "/chrome_EF5lvJhhLx.png",
+    nameImg: "/chrome_EF5lvJhhLx.png",
+  },
+  {
+    id: 6,
+    title: "Git & GitHub",
+    issuer: "Codecademy",
+    date: "2025",
+    description: "Comprehensive version control and collaboration certification covering Git workflows, GitHub features, and team development practices.",
+    link: "#",
+    img: "/git.svg",
+    nameImg: "/git.svg",
   },
 ];
 
 export const companies = [
   {
     id: 1,
-    name: "cloudinary",
+    name: "Synopsys",
     img: "/cloud.svg",
     nameImg: "/cloudName.svg",
   },
   {
     id: 2,
-    name: "appwrite",
+    name: "Cadence",
     img: "/app.svg",
     nameImg: "/appName.svg",
   },
   {
     id: 3,
-    name: "HOSTINGER",
+    name: "Mentor Graphics",
     img: "/host.svg",
     nameImg: "/hostName.svg",
   },
   {
     id: 4,
-    name: "stream",
+    name: "Intel",
     img: "/s.svg",
     nameImg: "/streamName.svg",
   },
   {
     id: 5,
-    name: "docker.",
+    name: "AMD",
     img: "/dock.svg",
     nameImg: "/dockerName.svg",
-  },
-];
-
-export const workExperience = [
-  {
-    id: 1,
-    title: "Frontend Engineer Intern",
-    desc: "Assisted in the development of a web-based platform using React.js, enhancing interactivity.",
-    className: "md:col-span-2",
-    thumbnail: "/exp1.svg",
-  },
-  {
-    id: 2,
-    title: "Mobile App Dev - JSM Tech",
-    desc: "Designed and developed mobile app for both iOS & Android platforms using React Native.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp2.svg",
-  },
-  {
-    id: 3,
-    title: "Freelance App Dev Project",
-    desc: "Led the dev of a mobile app for a client, from initial concept to deployment on app stores.",
-    className: "md:col-span-2", // change to md:col-span-2
-    thumbnail: "/exp3.svg",
-  },
-  {
-    id: 4,
-    title: "Lead Frontend Developer",
-    desc: "Developed and maintained user-facing features using modern frontend technologies.",
-    className: "md:col-span-2",
-    thumbnail: "/exp4.svg",
   },
 ];
 
@@ -205,13 +204,16 @@ export const socialMedia = [
   {
     id: 1,
     img: "/git.svg",
+    link: "https://github.com/daddyroll",
   },
   {
     id: 2,
-    img: "/twit.svg",
+    img: "/link.svg",
+    link: "https://www.linkedin.com/in/shreypathak",
   },
   {
     id: 3,
-    img: "/link.svg",
+    img: "/mail.svg",
+    link: "mailto:shreyasubc17@gmail.com",
   },
 ];

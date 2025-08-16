@@ -17,12 +17,12 @@ const Footer = () => {
 
       <div className="flex flex-col items-center">
         <h1 className="heading lg:max-w-[45vw]">
-          Ready to take <span className="text-purple">your</span> digital
-          presence to the next level?
+          <span className="bg-gradient-to-r from-cyan-400 via-purple-500 to-cyan-400 bg-clip-text text-transparent animate-pulse">
+            Driven to push boundaries in digital design and verification
+          </span>
         </h1>
         <p className="text-white-200 md:mt-10 my-5 text-center">
-          Reach out to me today and let&apos;s discuss how I can help you
-          achieve your goals.
+          From idea to silicon without the guesswork.
         </p>
         <a href="mailto:contact@jsmastery.pro">
           <MagicButton
@@ -32,20 +32,42 @@ const Footer = () => {
           />
         </a>
       </div>
-      <div className="flex mt-16 md:flex-row flex-col justify-between items-center">
-        <p className="md:text-base text-sm md:font-normal font-light">
-          Copyright © 2024 Adrian Hajdin
-        </p>
-
+      <div className="flex mt-16 md:flex-row flex-col justify-center items-center">
         <div className="flex items-center md:gap-3 gap-6">
-          {socialMedia.map((info) => (
-            <div
-              key={info.id}
-              className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300"
-            >
-              <img src={info.img} alt="icons" width={20} height={20} />
-            </div>
-          ))}
+          {/* GitHub */}
+          <a
+            href="https://github.com/daddyroll"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:bg-opacity-90 transition-all duration-200"
+          >
+            <img src="/git.svg" alt="GitHub" width={20} height={20} />
+          </a>
+          
+          {/* LinkedIn */}
+          <a
+            href="https://www.linkedin.com/in/shreypathak"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:bg-opacity-90 transition-all duration-200"
+          >
+            <img src="/link.svg" alt="LinkedIn" width={20} height={20} />
+          </a>
+          
+          {/* Email */}
+          <button
+            onClick={() => {
+              navigator.clipboard.writeText("shreyasubc17@gmail.com").then(() => {
+                alert("Email address copied to clipboard: shreyasubc17@gmail.com");
+              }).catch(() => {
+                alert("Email: shreyasubc17@gmail.com");
+              });
+            }}
+            className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:bg-opacity-90 transition-all duration-200"
+            title="Click to copy email address"
+          >
+            <img src="/mail.svg" alt="Email" width={20} height={20} />
+          </button>
         </div>
       </div>
     </footer>

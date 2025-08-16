@@ -2,48 +2,64 @@
 
 import React from "react";
 
-import { companies, testimonials } from "@/data";
-import { InfiniteMovingCards } from "./ui/InfiniteCards";
+import { certificates } from "@/data";
 
 const Clients = () => {
   return (
-    <section id="testimonials" className="py-20">
+    <section id="certificates" className="py-20">
       <h1 className="heading">
-        Kind words from
-        <span className="text-purple"> satisfied clients</span>
+        My <span className="text-purple">certificates</span>
       </h1>
 
       <div className="flex flex-col items-center max-lg:mt-10">
-        <div
-          // remove bg-white dark:bg-black dark:bg-grid-white/[0.05], h-[40rem] to 30rem , md:h-[30rem] are for the responsive design
-          className="h-[50vh] md:h-[30rem] rounded-md flex flex-col antialiased  items-center justify-center relative overflow-hidden"
-        >
-          <InfiniteMovingCards
-            items={testimonials}
-            direction="right"
-            speed="slow"
-          />
+        {/* Certificates Grid */}
+        <div className="w-full max-w-6xl mt-12">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            {certificates.map((certificate) => (
+              <div
+                key={certificate.id}
+                className="relative rounded-2xl border border-slate-800 p-6 md:p-8"
+                style={{
+                  background: "rgb(4,7,29)",
+                  backgroundColor:
+                    "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+                }}
+              >
+                <div className="flex flex-col h-full">
+                  {/* Certificate Header with Company Logo */}
+                  <div className="flex items-center gap-3 mb-4">
+                    <div className="flex items-center gap-2">
+                      <img
+                        src={certificate.img}
+                        alt={certificate.issuer}
+                        className="w-8 h-8"
+                      />
+                      {certificate.nameImg && certificate.nameImg !== certificate.img && (
+                        <img
+                          src={certificate.nameImg}
+                          alt={certificate.issuer}
+                          className="h-6"
+                        />
+                      )}
+                    </div>
+                  </div>
+                  
+                  <h3 className="text-xl font-bold text-white mb-2">
+                    {certificate.title}
+                  </h3>
+                  <p className="text-sm text-gray-300 mb-4">
+                    {certificate.issuer} • {certificate.date}
+                  </p>
+                  <p className="text-gray-400 text-sm flex-grow">
+                    {certificate.description}
+                  </p>
+                </div>
+              </div>
+            ))}
+          </div>
         </div>
 
-        <div className="flex flex-wrap items-center justify-center gap-4 md:gap-16 max-lg:mt-10">
-          {companies.map((company) => (
-            <React.Fragment key={company.id}>
-              <div className="flex md:max-w-60 max-w-32 gap-2">
-                <img
-                  src={company.img}
-                  alt={company.name}
-                  className="md:w-10 w-5"
-                />
-                <img
-                  src={company.nameImg}
-                  alt={company.name}
-                  width={company.id === 4 || company.id === 5 ? 100 : 150}
-                  className="md:w-24 w-20"
-                />
-              </div>
-            </React.Fragment>
-          ))}
-        </div>
+
       </div>
     </section>
   );

@@ -11,6 +11,12 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
+import EnhancedRiscVSection from "./EnhancedRiscVSection";
+import EnhancedContactSection from "./EnhancedContactSection";
+import EnhancedPassionSection from "./EnhancedPassionSection";
+import EnhancedVLSISection from "./EnhancedVLSISection";
+import EnhancedTimeZoneSection from "./EnhancedTimeZoneSection";
+import EnhancedSkillsSection from "./EnhancedSkillsSection";
 
 export const BentoGrid = ({
   className,
@@ -52,8 +58,8 @@ export const BentoGridItem = ({
   titleClassName?: string;
   spareImg?: string;
 }) => {
-  const leftLists = ["ReactJS", "Express", "Typescript"];
-  const rightLists = ["VueJS", "NuxtJS", "GraphQL"];
+  const leftLists = ["SystemVerilog", "UVM", "VHDL"];
+  const rightLists = ["Synopsys", "Cadence", "Mentor"];
 
   const [copied, setCopied] = useState(false);
 
@@ -67,10 +73,126 @@ export const BentoGridItem = ({
   };
 
   const handleCopy = () => {
-    const text = "hsu@jsmastery.pro";
+    const text = "shrey@example.com";
     navigator.clipboard.writeText(text);
     setCopied(true);
   };
+
+  // If it's the VLSI section (id === 1), render the enhanced component
+  if (id === 1) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedVLSISection />
+      </div>
+    );
+  }
+
+  // If it's the time zone section (id === 2), render the enhanced component
+  if (id === 2) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedTimeZoneSection />
+      </div>
+    );
+  }
+
+  // If it's the skills section (id === 3), render the enhanced component
+  if (id === 3) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedSkillsSection />
+      </div>
+    );
+  }
+
+  // If it's the RISC-V section (id === 5), render the enhanced component
+  if (id === 5) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedRiscVSection />
+      </div>
+    );
+  }
+
+  // If it's the passion section (id === 4), render the enhanced component
+  if (id === 4) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedPassionSection />
+      </div>
+    );
+  }
+
+  // If it's the contact section (id === 6), render the enhanced component
+  if (id === 6) {
+    return (
+      <div
+        className={cn(
+          "row-span-1 relative overflow-hidden rounded-3xl border border-white/[0.1] group/bento hover:shadow-xl transition duration-200 shadow-input dark:shadow-none justify-between flex flex-col space-y-4",
+          className
+        )}
+        style={{
+          background: "rgb(4,7,29)",
+          backgroundColor:
+            "linear-gradient(90deg, rgba(4,7,29,1) 0%, rgba(12,14,35,1) 100%)",
+        }}
+      >
+        <EnhancedContactSection />
+      </div>
+    );
+  }
+
+
 
   return (
     <div
@@ -118,29 +240,31 @@ export const BentoGridItem = ({
           </BackgroundGradientAnimation>
         )}
 
-        <div
-          className={cn(
-            titleClassName,
-            "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
-          )}
-        >
-          {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
-          <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
-            {description}
-          </div>
-          {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
-          {/* remove mb-2 mt-2 */}
+        {/* Only render content div for non-enhanced sections */}
+        {id !== 1 && id !== 2 && id !== 3 && id !== 4 && id !== 5 && id !== 6 && (
           <div
-            className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            className={cn(
+              titleClassName,
+              "group-hover/bento:translate-x-2 transition duration-200 relative md:h-full min-h-40 flex flex-col px-5 p-5 lg:p-10"
+            )}
           >
-            {title}
-          </div>
+            {/* change the order of the title and des, font-extralight, remove text-xs text-neutral-600 dark:text-neutral-300 , change the text-color */}
+            <div className="font-sans font-extralight md:max-w-32 md:text-xs lg:text-base text-sm text-[#C1C2D3] z-10">
+              {description}
+            </div>
+            {/* add text-3xl max-w-96 , remove text-neutral-600 dark:text-neutral-300*/}
+            {/* remove mb-2 mt-2 */}
+            <div
+              className={`font-sans text-lg lg:text-3xl max-w-96 font-bold z-10`}
+            >
+              {title}
+            </div>
 
-          {/* for the github 3d globe */}
-          {id === 2 && <GridGlobe />}
+            {/* for the github 3d globe */}
+            {id === 2 && <GridGlobe />}
 
-          {/* Tech stack list div */}
-          {id === 3 && (
+            {/* Tech stack list div */}
+            {id === 3 && (
             <div className="flex gap-1 lg:gap-5 w-fit absolute -right-3 lg:-right-2">
               {/* tech stack lists */}
               <div className="flex flex-col gap-3 md:gap-3 lg:gap-8">
@@ -170,7 +294,7 @@ export const BentoGridItem = ({
             </div>
           )}
           {id === 6 && (
-            <div className="mt-5 relative">
+            <div className="mt-5 relative space-y-3">
               {/* button border magic from tailwind css buttons  */}
               {/* add rounded-md h-8 md:h-8, remove rounded-full */}
               {/* remove focus:ring-2 focus:ring-slate-400 focus:ring-offset-2 focus:ring-offset-slate-50 */}
@@ -190,9 +314,18 @@ export const BentoGridItem = ({
                 handleClick={handleCopy}
                 otherClasses="!bg-[#161A31]"
               />
+              
+              <a 
+                href="/VLSI Resume.pdf" 
+                download
+                className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#161A31] border border-white/[0.1] rounded-lg hover:bg-[#1a1f3a] transition-colors duration-200"
+              >
+                📄 Download Resume
+              </a>
             </div>
           )}
-        </div>
+          </div>
+        )}
       </div>
     </div>
   );

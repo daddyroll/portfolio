@@ -13,11 +13,11 @@ const Approach = () => {
       <div className="my-20 flex flex-col lg:flex-row items-center justify-center w-full gap-4">
         {/* add des prop */}
         <Card
-          title="Planning & Strategy"
+          title="Design & Architecture"
           icon={<AceternityIcon order="Phase 1" />}
-          des="We'll collaborate to map out your website's goals, target audience, 
-          and key functionalities. We'll discuss things like site structure, 
-          navigation, and content requirements."
+          des="I start by understanding the design requirements and creating a comprehensive 
+          architecture plan. This involves defining the digital logic, creating block diagrams, 
+          and establishing design constraints and specifications."
         >
           <CanvasRevealEffect
             animationSpeed={5.1}
@@ -26,11 +26,11 @@ const Approach = () => {
           />
         </Card>
         <Card
-          title="Development & Progress Update"
+          title="Implementation & Verification"
           icon={<AceternityIcon order="Phase 2" />}
-          des="Once we agree on the plan, I cue my lofi playlist and dive into
-          coding. From initial sketches to polished code, I keep you updated
-          every step of the way."
+          des="Using SystemVerilog and UVM methodologies, I implement the design and develop 
+          comprehensive testbenches. This phase includes RTL coding, functional verification, 
+          and ensuring design meets all specifications."
         >
           <CanvasRevealEffect
             animationSpeed={3}
@@ -48,11 +48,11 @@ const Approach = () => {
           {/* <div className="absolute inset-0 [mask-image:radial-gradient(400px_at_center,white,transparent)] bg-black/50 dark:bg-black/90" /> */}
         </Card>
         <Card
-          title="Development & Launch"
+          title="Validation & Optimization"
           icon={<AceternityIcon order="Phase 3" />}
-          des="This is where the magic happens! Based on the approved design, 
-          I'll translate everything into functional code, building your website
-          from the ground up."
+          des="The final phase involves thorough validation using simulation tools, 
+          performance analysis, and optimization. I ensure the design is robust, 
+          efficient, and ready for synthesis and implementation."
         >
           <CanvasRevealEffect
             animationSpeed={3}
