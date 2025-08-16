@@ -1,10 +1,10 @@
 // import {withSentryConfig} from '@sentry/nextjs';
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  eslint: {
-    // ✅ Skip ESLint during production builds on Vercel
-    ignoreDuringBuilds: true,
-  },
+    eslint: {
+        // ✅ Skip ESLint during production builds on Vercel
+        ignoreDuringBuilds: true,
+    },
 };
 
 export default nextConfig;
