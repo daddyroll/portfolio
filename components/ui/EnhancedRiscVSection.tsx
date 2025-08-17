@@ -6,6 +6,8 @@ const EnhancedRiscVSection = () => {
   const canvasRef = useRef<HTMLCanvasElement>(null);
 
   useEffect(() => {
+    if (typeof window === "undefined") return; // <-- guard
+    
     const canvas = canvasRef.current;
     if (!canvas) return;
 

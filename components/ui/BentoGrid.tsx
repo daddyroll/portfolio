@@ -1,5 +1,6 @@
 import { useState } from "react";
 import { IoCopyOutline } from "react-icons/io5";
+import dynamic from "next/dynamic";
 
 // Also install this npm i --save-dev @types/react-lottie
 import Lottie from "react-lottie";
@@ -11,12 +12,14 @@ import { BackgroundGradientAnimation } from "./GradientBg";
 import GridGlobe from "./GridGlobe";
 import animationData from "@/data/confetti.json";
 import MagicButton from "../MagicButton";
-import EnhancedRiscVSection from "./EnhancedRiscVSection";
-import EnhancedContactSection from "./EnhancedContactSection";
-import EnhancedPassionSection from "./EnhancedPassionSection";
-import EnhancedVLSISection from "./EnhancedVLSISection";
-import EnhancedTimeZoneSection from "./EnhancedTimeZoneSection";
-import EnhancedSkillsSection from "./EnhancedSkillsSection";
+
+// Dynamic imports for DOM-dependent components
+const EnhancedRiscVSection = dynamic(() => import("./EnhancedRiscVSection"), { ssr: false });
+const EnhancedContactSection = dynamic(() => import("./EnhancedContactSection"), { ssr: false });
+const EnhancedPassionSection = dynamic(() => import("./EnhancedPassionSection"), { ssr: false });
+const EnhancedVLSISection = dynamic(() => import("./EnhancedVLSISection"), { ssr: false });
+const EnhancedTimeZoneSection = dynamic(() => import("./EnhancedTimeZoneSection"), { ssr: false });
+const EnhancedSkillsSection = dynamic(() => import("./EnhancedSkillsSection"), { ssr: false });
 
 export const BentoGrid = ({
   className,
