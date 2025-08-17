@@ -59,10 +59,15 @@ const Footer = () => {
           {/* Email */}
           <button
             onClick={() => {
+              if (typeof window === "undefined") return; // guard
               navigator.clipboard.writeText("shreyasubc17@gmail.com").then(() => {
-                alert("Email address copied to clipboard: shreyasubc17@gmail.com");
+                if (typeof window !== "undefined") {
+                  alert("Email address copied to clipboard: shreyasubc17@gmail.com");
+                }
               }).catch(() => {
-                alert("Email: shreyasubc17@gmail.com");
+                if (typeof window !== "undefined") {
+                  alert("Email: shreyasubc17@gmail.com");
+                }
               });
             }}
             className="w-10 h-10 cursor-pointer flex justify-center items-center backdrop-filter backdrop-blur-lg saturate-180 bg-opacity-75 bg-black-200 rounded-lg border border-black-300 hover:bg-opacity-90 transition-all duration-200"

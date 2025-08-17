@@ -1,16 +1,16 @@
 "use client";
 
 import { navItems } from "@/data";
-import dynamic from "next/dynamic";
+import dynamicImport from "next/dynamic";
 
-const Hero = dynamic(() => import("@/components/Hero"), { ssr: false });
-const Grid = dynamic(() => import("@/components/Grid"), { ssr: false });
-const Footer = dynamic(() => import("@/components/Footer"), { ssr: false });
-const Clients = dynamic(() => import("@/components/Clients"), { ssr: false });
-const Approach = dynamic(() => import("@/components/Approach"), { ssr: false });
-const Experience = dynamic(() => import("@/components/Experience"), { ssr: false });
-const RecentProjects = dynamic(() => import("@/components/RecentProjects"), { ssr: false });
-const FloatingNav = dynamic(() => import("@/components/ui/FloatingNavbar").then(mod => ({ default: mod.FloatingNav })), { ssr: false });
+const Hero = dynamicImport(() => import("@/components/Hero"), { ssr: false });
+const Grid = dynamicImport(() => import("@/components/Grid"), { ssr: false });
+const Footer = dynamicImport(() => import("@/components/Footer"), { ssr: false });
+const Clients = dynamicImport(() => import("@/components/Clients"), { ssr: false });
+const Approach = dynamicImport(() => import("@/components/Approach"), { ssr: false });
+const Experience = dynamicImport(() => import("@/components/Experience"), { ssr: false });
+const RecentProjects = dynamicImport(() => import("@/components/RecentProjects"), { ssr: false });
+const FloatingNav = dynamicImport(() => import("@/components/ui/FloatingNavbar").then(mod => ({ default: mod.FloatingNav })), { ssr: false });
 
 const Home = () => {
   return (
@@ -34,3 +34,4 @@ const Home = () => {
 export default Home;
 
 export const dynamic = "force-dynamic";
+export const revalidate = 0; // belt & suspenders while we debug

@@ -6,12 +6,15 @@ const EnhancedContactSection = () => {
   const [copied, setCopied] = useState(false);
 
   const handleCopyEmail = async () => {
+    if (typeof window === "undefined") return; // guard
     try {
       await navigator.clipboard.writeText("shreyasubc17@gmail.com");
       setCopied(true);
       setTimeout(() => setCopied(false), 2000);
     } catch (err) {
-      alert("Email: shreyasubc17@gmail.com");
+      if (typeof window !== "undefined") {
+        alert("Email: shreyasubc17@gmail.com");
+      }
     }
   };
 

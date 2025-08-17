@@ -75,10 +75,15 @@ export const BentoGridItem = ({
     },
   };
 
-  const handleCopy = () => {
+  const handleCopy = async () => {
+    if (typeof window === "undefined") return; // guard
     const text = "shrey@example.com";
-    navigator.clipboard.writeText(text);
-    setCopied(true);
+    try {
+      await navigator.clipboard.writeText(text);
+      setCopied(true);
+    } catch (err) {
+      console.error('Failed to copy text: ', err);
+    }
   };
 
   // If it's the VLSI section (id === 1), render the enhanced component
