@@ -74,7 +74,7 @@ export const projects = [
     id: 1,
     title: "16-bit Arithmetic Logic Unit (ALU) Design",
     des: "Designed and implemented a modular 16-bit ALU in SystemVerilog, capable of executing a range of arithmetic and logical operations using a custom instruction set. Verified functionality through simulation, ensuring reliable signal behavior for hardware environments.",
-    img: "/chrome_rs3hwyfSGn.png",
+    img: "/chrome_iiEvTPuW4x.png",
     tools: ["SystemVerilog", "EPWave", "EDAPlayground", "HDL", "Testbench"],
     link: "#",
   },
