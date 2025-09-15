@@ -84,9 +84,7 @@ const EnhancedRiscVSection = () => {
              </h1>
           <p className="mt-6 text-lg text-gray-300 leading-relaxed">
             Currently building a <span className="font-semibold text-gray-300">5-stage pipelined RISC-V processor</span> 
-            and designing a <span className="font-semibold text-purple-400">precision PWM generator</span> in SystemVerilog.
-            Focused on pushing performance, accuracy, and scalability—turning advanced digital design principles 
-            into verified, high-reliability hardware.
+            using <span className="font-semibold text-purple-400">open source tools</span>.
           </p>
         </div>
 
