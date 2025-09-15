@@ -53,11 +53,11 @@ const EnhancedRiscVSection = () => {
 
   return (
     <section className="relative bg-black text-white py-16 px-8 overflow-hidden rounded-3xl border border-white/[0.1] h-full">
-      {/* Matrix Binary Rain Background */}
-      <canvas 
+      {/* Matrix Binary Rain Background - DISABLED */}
+      {/* <canvas 
         ref={canvasRef} 
         className="absolute inset-0 rounded-3xl"
-      />
+      /> */}
       
       {/* Animated Circuit Overlay */}
       <div className="absolute inset-0 pointer-events-none rounded-3xl">

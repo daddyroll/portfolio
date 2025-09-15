@@ -1,0 +1,5 @@
+[33m98d5836[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m, [m[1;31morigin/HEAD[m[33m)[m Fix engraving machine project image display - remove blue border
+[33m8bdd72f[m Update 16-bit ALU project to use ChatGPT-generated image
+[33m04a1639[m Update 16-bit ALU project with new futuristic chip image
+[33m23e4721[m Test with different image to isolate the issue
+[33m0749497[m Add cache-busting parameter to force image reload
