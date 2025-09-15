@@ -71,9 +71,9 @@ const ProjectModal = ({ isOpen, onClose, project }: ProjectModalProps) => {
              <ul className="text-gray-300 space-y-2">
                {project.id === 1 && (
                  <>
-                   <li>• Created a custom 16-bit instruction format with opcode and register addressing.</li>
-                   <li>• Built a robust testbench for comprehensive simulation and verification.</li>
-                   <li>• Analyzed waveforms in EPWave to confirm design accuracy.</li>
+                   <li>• Designed and verified a synthesizable 1-bit full adder in Verilog with testbench validation.</li>
+                   <li>• Synthesized RTL to gate-level netlist mapped to Sky130 standard cells using Yosys.</li>
+                   <li>• Automated floorplan, IO pin placement, and PnR steps in OpenROAD with TCL scripting, generating placed layouts and preparing for DRC/LVS checks.</li>
                  </>
                )}
                {project.id === 2 && (
