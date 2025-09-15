@@ -72,10 +72,10 @@ export const gridItems = [
 export const projects = [
   {
     id: 1,
-    title: "16-bit Arithmetic Logic Unit (ALU) Design",
-    des: "Designed and implemented a modular 16-bit ALU in SystemVerilog, capable of executing a range of arithmetic and logical operations using a custom instruction set. Verified functionality through simulation, ensuring reliable signal behavior for hardware environments.",
+    title: "Full Adder Physical Design (Sky130 PDK)",
+    des: "Implemented a complete RTL-to-Physical Design flow for a 1-bit full adder using Yosys and OpenROAD with the Sky130 PDK. Designed synthesizable Verilog RTL, performed synthesis and tech mapping with standard cells (maj3, xor3), and executed floorplanning, IO placement, and cell placement in OpenROAD.",
     img: "/ChatGPT Image Aug 17, 2025, 06_16_04 PM.png",
-    tools: ["SystemVerilog", "EPWave", "EDAPlayground", "HDL", "Testbench"],
+    tools: ["Verilog", "Yosys", "OpenROAD", "Sky130 PDK", "TCL", "Netgen", "Magic"],
     link: "#",
   },
   {
