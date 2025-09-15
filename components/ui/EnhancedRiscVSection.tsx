@@ -83,8 +83,7 @@ const EnhancedRiscVSection = () => {
                </span>
              </h1>
           <p className="mt-6 text-lg text-gray-300 leading-relaxed">
-            Currently building a <span className="font-semibold text-gray-300">5-stage pipelined RISC-V processor</span> 
-            using <span className="font-semibold text-purple-400">open source tools</span>.
+            Currently building a <span className="font-semibold text-gray-300">5-stage pipelined RISC-V processor</span> using <span className="font-semibold text-purple-400">open source tools</span>.
           </p>
         </div>
 
