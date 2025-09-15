@@ -73,7 +73,7 @@ export const projects = [
   {
     id: 1,
     title: "Full Adder Physical Design (Sky130 PDK)",
-    des: "Implemented a complete RTL-to-Physical Design flow for a 1-bit full adder using Yosys and OpenROAD with the Sky130 PDK. Designed synthesizable Verilog RTL, performed synthesis and tech mapping with standard cells (maj3, xor3), and executed floorplanning, IO placement, and cell placement in OpenROAD.",
+    des: "Implemented a complete RTL-to-Physical Design flow for a 1-bit full adder using Yosys and OpenROAD with the Sky130 PDK. Designed and verified a synthesizable 1-bit full adder in Verilog with testbench validation. Synthesized RTL to gate-level netlist mapped to Sky130 standard cells using Yosys. Automated floorplan, IO pin placement, and PnR steps in OpenROAD with TCL scripting, generating placed layouts and preparing for DRC/LVS checks.",
     img: "/ChatGPT Image Aug 17, 2025, 06_16_04 PM.png",
     tools: ["Verilog", "Yosys", "OpenROAD", "Sky130 PDK", "TCL", "Netgen", "Magic"],
     link: "#",
