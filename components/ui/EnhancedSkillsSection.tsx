@@ -59,7 +59,7 @@ const EnhancedSkillsSection = () => {
          <div>
            <h4 className="text-cyan-300 font-semibold mb-3">Tools</h4>
           <div className="flex flex-wrap gap-2">
-            {["Synopsys VCS", "Cadence Virtuoso", "Intel Quartus", "LTSpice"].map((s) => (
+            {["Synopsys VCS", "Cadence Virtuoso", "Intel Quartus", "LTSpice", "Yosys", "OpenROAD"].map((s) => (
               <span
                 key={s}
                 className="px-3 py-1 bg-gray-800/90 rounded-full text-gray-200 ring-1 ring-gray-700 hover:ring-purple-400/70 transition hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(168,85,247,0.35)]"
@@ -74,7 +74,7 @@ const EnhancedSkillsSection = () => {
         <div>
           <h4 className="text-cyan-300 font-semibold mb-3">Platforms & Hardware</h4>
           <div className="flex flex-wrap gap-2">
-            {["FPGA Prototyping", "Raspberry Pi", "HMI/PLC (LAD, SFC)"].map((s) => (
+            {["FPGA Prototyping", "Raspberry Pi", "HMI/PLC (LAD, SFC)", "Sky130 PDK"].map((s) => (
               <span
                 key={s}
                 className="px-3 py-1 bg-gray-800/90 rounded-full text-gray-200 ring-1 ring-gray-700 hover:ring-cyan-400/70 transition hover:-translate-y-0.5 hover:shadow-[0_0_20px_rgba(34,211,238,0.35)]"
