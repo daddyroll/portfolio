@@ -48,7 +48,7 @@ const EnhancedContactSection = () => {
           </button>
           {/* Download Resume Button */}
           <a 
-            href="/VLSI Resume (3).pdf" 
+            href="/VLSI .pdf" 
             download
             className="px-6 py-3 bg-gray-800 border border-purple-400 text-purple-300 rounded-lg shadow-md hover:shadow-purple-400/50 hover:scale-105 transition-all">
             📄 Download Resume
