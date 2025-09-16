@@ -324,7 +324,7 @@ export const BentoGridItem = ({
               />
               
               <a 
-                href="/VLSI Resume (3).pdf" 
+                href="/VLSI .pdf" 
                 download
                 className="inline-flex items-center justify-center px-6 py-3 text-sm font-medium text-white bg-[#161A31] border border-white/[0.1] rounded-lg hover:bg-[#1a1f3a] transition-colors duration-200"
               >
