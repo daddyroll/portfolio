@@ -59,7 +59,7 @@ const Hero = () => {
           />
 
                                                      <p className="text-center md:tracking-wider mb-4 text-sm md:text-lg lg:text-2xl">
-            Hi! I&apos;m Shreyas, recent Electrical Engineering Graduate based in Mississauga and open to relocate.
+            Hi! I&apos;m Shreyas, recent Electrical Engineering Graduate based in Toronto and open to relocate.
           </p>
 
           <a href="#projects">
